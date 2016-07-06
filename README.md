@@ -1,5 +1,5 @@
 # mean-starter
-This simple starter application will help you get started with the base mean stack structure and will save you some time.
+This is a simple classified application built with mean stack which lets you add, update and delete a classified.
 
 <h1>Dependencies</h1>
 NodeJs and Bower
