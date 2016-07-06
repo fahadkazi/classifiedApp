@@ -16,6 +16,10 @@ var router = express.Router();
 // config files
 var db = require('./config/db');
 
+require('./app/models/Classifieds');
+require('./app/models/User');
+require('./config/passport');
+
 // set our port
 var port = process.env.PORT || 8080; 
 

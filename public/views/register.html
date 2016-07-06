@@ -1,0 +1,55 @@
+<md-content layout="row" layout-align="center center" layout-padding>
+	<div flex="33" layout="column">
+		<md-card>
+	    <md-toolbar class="md-hue-2 _md">
+	      <div class="md-toolbar-tools">
+	        <h2>
+	          <span>Register</span>
+	        </h2>
+	      </div>
+	    </md-toolbar>
+	    <md-content class="md-padding">
+	      <md-card ng-show="error">
+	        <md-card-content>
+	              <p>{{error.message}}</p>
+	            </md-card-content>
+	      </md-card>
+	      <form ng-submit="register()">
+	      	<md-input-container class="md-block">
+	          <!-- Use floating placeholder instead of label -->
+	          <md-icon class="md-default-theme material-icons">&#xE7FF;</md-icon>
+	          <input ng-model="user.firstName" type="text" placeholder="First Name (required)" ng-required="true">
+	        </md-input-container>
+	        <md-input-container class="md-block">
+	          <!-- Use floating placeholder instead of label -->
+	          <md-icon class="md-default-theme material-icons">&#xE7FF;</md-icon>
+	          <input ng-model="user.lastName" type="text" placeholder="Last Name (required)" ng-required="true">
+	        </md-input-container>
+	        <md-input-container class="md-block">
+	          <!-- Use floating placeholder instead of label -->
+	          <md-icon class="md-default-theme material-icons">&#xE7FF;</md-icon>
+	          <input ng-model="user.username" type="text" placeholder="Username (required)" ng-required="true">
+	        </md-input-container>
+	        <md-input-container class="md-block">
+	          <!-- Use floating placeholder instead of label -->
+	          <md-icon class="md-default-theme material-icons">&#xE0E1;</md-icon>
+	          <input ng-model="user.email" type="text" placeholder="Email (required)" ng-required="true">
+	        </md-input-container>
+	        <md-input-container class="md-block">
+	          <!-- Use floating placeholder instead of label -->
+	          <md-icon class="md-default-theme material-icons">&#xE0CD;</md-icon>
+	          <input ng-model="user.phone" type="text" placeholder="Phone">
+	        </md-input-container>
+	        <md-input-container class="md-block">
+	          <!-- Use floating placeholder instead of label -->
+	          <md-icon class="md-default-theme material-icons">&#xE899;</md-icon>
+	          <input ng-model="user.password" type="password" placeholder="Password (required)" ng-required="true">
+	        </md-input-container>
+	        <md-card-actions layout="column" layout-align="start">
+	          <md-button class="md-raised md-primary" type="submit">Register</md-button>
+	        </md-card-actions>
+	      </form>
+	    </md-content>
+	  </md-card>
+	</div>
+</md-content>
