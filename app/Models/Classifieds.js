@@ -14,7 +14,7 @@ var ClassifiedSchema = new Schema({
 	},
 	categories: [],
 	image: String,
-	user: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User' }]
+	user: { type: mongoose.Schema.Types.ObjectId, ref: 'User' }
 });
 
 module.exports = mongoose.model('Classified', ClassifiedSchema);

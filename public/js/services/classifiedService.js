@@ -76,7 +76,7 @@ app.factory('classifiedService', function($http) {
 		});
 	};
 
-	o.createClassifieds = function(id, classified) {
+	o.createClassifieds = function(classified) {
 		return $http.post('api/classifieds', classified).then(function(response) {
 			o.classifieds.push(response.data);
 		});

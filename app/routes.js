@@ -26,12 +26,6 @@ module.exports = function(app, router) {
             };
 
             var user = new User(req.body);
-
-            // user.username = req.body.username;
-            // user.email = req.body.email;
-            // user.firstName = req.body.firstName;
-            // user.lastName = req.body.lastName;
-            // user.phone = req.body.phone;
             user.setPassword(req.body.password);
 
             user.save(function(err, user) {

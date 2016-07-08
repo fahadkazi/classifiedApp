@@ -3,7 +3,7 @@ var app = angular.module('classifiedApp');
 
 app.controller('NavCtrl', function($scope, auth) {
 	$scope.isLoggedIn = auth.isLoggedIn;
-	$scope.currentUser = auth.currentUser();
+	$scope.currentUser = auth.currentUser;
 	$scope.logout = auth.logout;
 });
 
@@ -47,7 +47,6 @@ app.controller('ClassifiedController', function($scope, classifiedService, $mdSi
 	$scope.classifieds = classifiedService.classifieds;
 
 	$scope.newClassified = function(classified) {
-		console.log($scope.currentUser);
 		$scope.title = "Add Classified";
 		$scope.openSideNav();
 		$scope.classified = {};
