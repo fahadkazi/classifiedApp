@@ -1,4 +1,4 @@
-# mean-starter
+# Classified app
 This is a simple classified application built with mean stack which lets you add, update and delete a classified.
 
 <h1>Dependencies</h1>
